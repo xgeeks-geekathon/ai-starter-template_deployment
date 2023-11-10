@@ -1,0 +1,23 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# commonLabels:
+#   app.xgeeks.org/team: idp_geekathon
+#   backstage.io/kubernetes-id: ai-starter-template
+
+namespace: idpkathon-dev
+# namespace: ai-starter-template-idp_geekathon-dev
+
+resources:
+  - ../../base
+  - ingress.yaml
+
+images:
+  # ATENTION name = image.name NOT name = spec.containers[0].name
+  - name: ghcr.io/xgeeks-geekathon/ai-starter-template
+    newTag: v1
+  - name: ghcr.io/xgeeks-geekathon/ai-starter-template-datafeeder
+    newTag: v1
+# replicas:
+#   - name: ai-starter-template # the deployment name
+#     count: 1
