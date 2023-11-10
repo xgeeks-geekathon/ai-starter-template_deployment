@@ -9,15 +9,12 @@ namespace: idpkathon-dev
 # namespace: ai-starter-template-idp_geekathon-dev
 
 resources:
-  - ../../base
-  - ingress.yaml
+- ../../base
+- ingress.yaml
 
-images:
   # ATENTION name = image.name NOT name = spec.containers[0].name
-  - name: ghcr.io/xgeeks-geekathon/ai-starter-template
-    newTag: v1
-  - name: ghcr.io/xgeeks-geekathon/ai-starter-template-datafeeder
-    newTag: v1
-# replicas:
-#   - name: ai-starter-template # the deployment name
-#     count: 1
+images:
+- name: ghcr.io/xgeeks-geekathon/ai-starter-template
+  newTag: v1
+- name: ghcr.io/xgeeks-geekathon/ai-starter-template-datafeeder
+  newTag: 923d9ec
