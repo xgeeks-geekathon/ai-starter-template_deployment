@@ -15,6 +15,6 @@ resources:
   # ATENTION name = image.name NOT name = spec.containers[0].name
 images:
 - name: ghcr.io/xgeeks-geekathon/ai-starter-template
-  newTag: 6685a75
+  newTag: b4b2afc
 - name: ghcr.io/xgeeks-geekathon/ai-starter-template-datafeeder
   newTag: b4b2afc
