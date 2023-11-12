@@ -17,4 +17,4 @@ images:
 - name: ghcr.io/xgeeks-geekathon/ai-starter-template
   newTag: 923d9ec
 - name: ghcr.io/xgeeks-geekathon/ai-starter-template-datafeeder
-  newTag: 923d9ec
+  newTag: 6685a75
